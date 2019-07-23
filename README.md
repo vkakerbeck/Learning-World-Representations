@@ -4,8 +4,8 @@ You can use the [editor on GitHub](https://github.com/vkakerbeck/Learning-World-
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<iframe width="900" height="550" frameborder="0" scrolling="no" src="content/myfig.html"></iframe>
-<iframe width="900" height="300" frameborder="0" scrolling="no" src="content/myanim.html"></iframe>
+<iframe width="900" height="550" frameborder="0" scrolling="no" src="./content/myfig.html"></iframe>
+<iframe width="900" height="300" frameborder="0" scrolling="no" src="./content/myanim.html"></iframe>
 
 ### Markdown
 
