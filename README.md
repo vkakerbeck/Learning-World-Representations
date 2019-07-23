@@ -2,10 +2,10 @@
 
 You can use the [editor on GitHub](https://github.com/vkakerbeck/Learning-World-Representations/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files. ./
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<iframe width="900" height="550" frameborder="0" scrolling="no" src="./content/fig_performance.html"></iframe>
-<iframe width="900" height="300" frameborder="0" scrolling="no" src="./content/anim_encodings.html"></iframe>
+<iframe width="900" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html"></iframe>
+<iframe width="900" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>
 
 ### Markdown
 
