@@ -32,6 +32,17 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vkakerbeck/Learning-World-Representations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
+### Test Interactive data
+
+
+We use a Variational Autoencoder (VAE) <dt-cite key="vae,vae_dm"></dt-cite> as the V model in our experiments. In the following demo, we show how the V model compresses each frame it receives at time step $t$ into a low dimensional *latent vector* $z_t$. This compressed representation can be used to reconstruct the original image.
+
+<div style="text-align: left;">
+<div id="doomvae_sketch" class="unselectable"></div>
+<figcaption style="color:#FF6C00;">Interactive Demo</figcaption>
+<figcaption>A VAE trained on screenshots obtained from a VizDoom <dt-cite key="vizdoom,takecover"></dt-cite> environment. You can load randomly chosen screenshots to be encoded into a small latent vector <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.04398em;">z</span></span></span></span>, which is used to reconstruct the original screenshot. You can also experiment with adjusting the values of the <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.04398em;">z</span></span></span></span> vector using the slider bars to see how it affects the reconstruction, or randomize <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.04398em;">z</span></span></span></span> to observe the space of possible screenshots learned by our VAE.</figcaption>
+</div>
+
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
