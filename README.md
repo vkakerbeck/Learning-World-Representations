@@ -10,7 +10,6 @@ I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the 
 We will now look at the agents brain in one particular run. Figure 2 shows the overall statistics of this run. You can see that the agent reached level 10 within less than 2000 steps.
 
 ![Figure 2](https://github.com/vkakerbeck/Learning-World-Representations/tree/master/content/images/Performance_Actions.png "Figure 2: Perforance and Action Distribution")
-<iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html" align="center"></iframe>
 
 ## Activity in the Agents Brain
 The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.
