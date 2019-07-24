@@ -40,16 +40,19 @@
 <p><img src="./content/images/PCA.png" alt="Figure 3" title="Figure 3: PCA"></p>
 <h2 id="ica-on-the-activations">ICA on the Activations</h2>
 <p>In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the the corresponding observations on the right.</p>
-<p>XX insert ICA video Here</p>
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html" align="center"></iframe>
+
 <p>In figure 4 you can see the correlation between the IC values and the value estimate. Overall the correlation isn&apos;t very strong.
 <img src="./content/images/ICA_Correlation.png" alt="Figure 4" title="Figure 4: ICA Correlation"></p>
 <h2 id="correlation-between-activations-and-value-estimate">Correlation Between Activations and Value Estimate</h2>
-<p>In figure 5 you can see the correlation between the neuron activations in the hidden layer and the value estimate.
-<img src="./content/images/Val_Correlation.png" alt="Figure 5" title="Figure 4: Correlation VE - Activations">
-When looking at the most correlated neuron in the visual part of the embedding one can se spikes in the neuron strongly correlated with going through level doors or obtaining other rewards.</p>
-<p>XX insert interactive graph here.</p>
+<p>In figure 5 you can see the correlation between the neuron activations in the hidden layer and the value estimate.</p>
+<p><img src="./content/images/Val_Correlation.png" alt="Figure 5" title="Figure 4: Correlation VE - Activations"></p>
+<p>When looking at the most correlated neuron in the visual part of the embedding one can se spikes in the neuron strongly correlated with going through level doors or obtaining other rewards.</p>
+<iframe width="900" height="550" frameborder="0" scrolling="no" src="content/most_cor.html"></iframe>
+
 <p>When we now look at the visual observations that lead to this neuron being activated we can see that a lot of these observations contain doors and spheres.</p>
-<p>XX insert corr neuron animation Here</p>
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_most_corr.html" align="center"></iframe>
+
 <h2 id="embeddings-correlated-with-actions">Embeddings Correlated with Actions</h2>
 <p>Figure 7 shows the correlation between network activations and the four action branches. You can see a stronger correlation with the visual part of the embedding than the vector part.</p>
 <p><img src="./content/images/Act_Correlation.png" alt="Figure 7" title="Figure 4: Correlation Action - Activations"></p>

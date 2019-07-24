@@ -29,23 +29,26 @@ Principal component analysis reveals quite a lot of variance in the activations.
 ## ICA on the Activations
 In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the the corresponding observations on the right.
 
-XX insert ICA video Here
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html" align="center"></iframe>
 
 In figure 4 you can see the correlation between the IC values and the value estimate. Overall the correlation isn't very strong.
 ![Figure 4](./content/images/ICA_Correlation.png "Figure 4: ICA Correlation")
 
 ## Correlation Between Activations and Value Estimate
 In figure 5 you can see the correlation between the neuron activations in the hidden layer and the value estimate.
+
 ![Figure 5](./content/images/Val_Correlation.png "Figure 4: Correlation VE - Activations")
+
 When looking at the most correlated neuron in the visual part of the embedding one can se spikes in the neuron strongly correlated with going through level doors or obtaining other rewards.
 
-XX insert interactive graph here.
+<iframe width="900" height="550" frameborder="0" scrolling="no" src="content/most_cor.html"></iframe>
 
 When we now look at the visual observations that lead to this neuron being activated we can see that a lot of these observations contain doors and spheres.
 
-XX insert corr neuron animation Here
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_most_corr.html" align="center"></iframe>
 
 ## Embeddings Correlated with Actions
+
 Figure 7 shows the correlation between network activations and the four action branches. You can see a stronger correlation with the visual part of the embedding than the vector part.
 
 ![Figure 7](./content/images/Act_Correlation.png "Figure 4: Correlation Action - Activations")
