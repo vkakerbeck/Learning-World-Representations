@@ -1,6 +1,11 @@
 # Obstacle Tower Challenge - Agent Analysis
 
-The following results have been obtained from an agent trained for the [Unity Obstacle Tower Challenge](https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge).
+The following results have been obtained from an agent trained for the [Unity Obstacle Tower Challenge](https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge). The agent needs to navigate a maze of rooms to get to a door which leads him one floor up. On the wa he can collect blue spheres which supply more time. Starting at level 5, the agent needs to find and pick up a key in order to open certain doors. Starting from level 10, the agent needs to solve puzzles in which he is supposed to push a box onto a designated area for a door to open. The agent shown here can't achive this yet.
+
+I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.
+
+![Figure 1](https://github.com/vkakerbeck/Learning-World-Representations/tree/master/content/images/NetworkStructure.png "Figure 1: Network Structure")
+
 
 <iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html"></iframe>
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>

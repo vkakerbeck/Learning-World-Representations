@@ -19,67 +19,16 @@
       border-radius: 3px;
     }
   }
-
-  #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-}
 </style>
 </head>
-<div id="loader"></div>
-<div style="display:none;" id="myDiv" class="animate-bottom">
-<body onload="myFunction()" style="margin:0;"><div id="readme" class="container"><article class="markdown-body entry-content"><h1 id="obstacle-tower-challenge-agent-analysis">Obstacle Tower Challenge - Agent Analysis</h1>
-<p>The following results have been obtained from an agent trained for the <a href="https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge">Unity Obstacle Tower Challenge</a>.</p>
-<p style="text-align:center;">
-<iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html" align="center"></iframe>
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html" align="center"></iframe>
-<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html" align="center"></iframe>
-</p>
+<body><div id="readme" class="container"><article class="markdown-body entry-content"><h1 id="obstacle-tower-challenge-agent-analysis">Obstacle Tower Challenge - Agent Analysis</h1>
+<p>The following results have been obtained from an agent trained for the <a href="https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge">Unity Obstacle Tower Challenge</a>. The agent needs to navigate a maze of rooms to get to a door which leads him one floor up. On the wa he can collect blue spheres which supply more time. Starting at level 5, the agent needs to find and pick up a key in order to open certain doors. Starting from level 10, the agent needs to solve puzzles in which he is supposed to push a box onto a designated area for a door to open. The agent shown here can&apos;t achive this yet.</p>
+<p>I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.</p>
+<p><img src="https://github.com/vkakerbeck/Learning-World-Representations/tree/master/content/images/NetworkStructure.png" alt="Figure 1" title="Figure 1: Network Structure"></p>
+<iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html"></iframe>
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>
+<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html"></iframe>
+
 <h3 id="markdown">Markdown</h3>
 <p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
 <pre><code class="language-markdown">Syntax highlighted code block
@@ -114,22 +63,8 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 </script>
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
   </style></defs><path d="M536.255427 195.182354c-7.804756-7.804756-17.966187-11.615549-28.311813-11.615549-9.43693 0-18.874883 3.449565-26.496467 10.163477-2.360767 1.452071-4.356214 3.267417-6.352685 5.262864L218.47792 455.611735c-15.607466 15.60542-15.607466 40.834011 0 56.43943 15.607466 15.607466 41.558511 15.607466 57.167001 0l193.46013-192.733583 0 600.526219c0 22.1423 17.787108 39.927361 39.927361 39.927361 22.140253 0 39.927361-17.785062 39.927361-39.927361L548.959773 319.317583 737.15704 508.422522c15.607466 15.607466 40.469714 15.607466 56.078203 0 15.607466-15.607466 15.425318-40.834011-0.182149-56.441477L536.255427 195.182354 536.255427 195.182354z" p-id="1036" fill="#333"/><path d="M101.784174 143.097092l816.674071 0c22.140253 0 39.925315-17.785062 39.925315-39.927361 0-22.140253-17.784038-39.925315-39.925315-39.925315L101.784174 63.244416c-22.140253 0-39.927361 17.785062-39.927361 39.925315C61.856813 125.31203 79.643921 143.097092 101.784174 143.097092L101.784174 143.097092z" p-id="1037" fill="#333"/></svg>
 </div>
-</div>
-
 </body></html>
