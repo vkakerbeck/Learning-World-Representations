@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+# Obstacle Tower Challenge - Agent Analysis
 
-You can use the [editor on GitHub](https://github.com/vkakerbeck/Learning-World-Representations/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The following results have been obtained from an agent trained for the [Unity Obstacle Tower Challenge](https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge).
 
 <iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html"></iframe>
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>
@@ -39,3 +37,16 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
