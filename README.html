@@ -30,7 +30,9 @@
 <p><img src="./content/images/Performance_Actions.png" alt="Figure 2" title="Figure 2: Perforance and Action Distribution"></p>
 <h2 id="activity-in-the-agents-brain">Activity in the Agents Brain</h2>
 <p>The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.</p>
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html" align="center"></iframe>
+<div align="center">
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html" align="middle"></iframe>
+</div>
 
 <h2 id="k-means-clustering-on-the-activations">K-Means Clustering on the Activations</h2>
 <p>In Figure 3 you can see the distribution on images into 10 clusters calculated with k-means clustering. When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys, other clusters contain frames where the agent walks into walls while others contain jumping or right/left turns.</p>
@@ -40,25 +42,42 @@
 <p><img src="./content/images/PCA.png" alt="Figure 3" title="Figure 3: PCA"></p>
 <h2 id="ica-on-the-activations">ICA on the Activations</h2>
 <p>In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the the corresponding observations on the right.</p>
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html" align="center"></iframe>
+<div align="center">
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html" align="middle"></iframe>
+</div>
 
-<p>In figure 4 you can see the correlation between the IC values and the value estimate. Overall the correlation isn&apos;t very strong.
-<img src="./content/images/ICA_Correlation.png" alt="Figure 4" title="Figure 4: ICA Correlation"></p>
+<p>In figure 4 you can see the correlation between the IC values and the value estimate. Overall the correlation isn&apos;t very strong.</p>
+<div align="center">
+<p><img src="./content/images/ICA_Correlation.png" alt="Figure 4" title="Figure 4: ICA Correlation"></p>
+</div>
+
 <h2 id="correlation-between-activations-and-value-estimate">Correlation Between Activations and Value Estimate</h2>
 <p>In figure 5 you can see the correlation between the neuron activations in the hidden layer and the value estimate.</p>
-<p><img src="./content/images/Val_Correlation.png" alt="Figure 5" title="Figure 4: Correlation VE - Activations"></p>
+<div align="center">
+<p><img src="./content/images/Val_Correlation.png" alt="Figure 5" title="Figure 5: Correlation VE - Activations"></p>
+</div>
+
 <p>When looking at the most correlated neuron in the visual part of the embedding one can se spikes in the neuron strongly correlated with going through level doors or obtaining other rewards.</p>
-<iframe width="900" height="550" frameborder="0" scrolling="no" src="content/most_cor.html"></iframe>
+<div align="center">
+<iframe width="800" height="550" frameborder="0" scrolling="no" src="content/most_cor.html"></iframe>
+</div>
 
 <p>When we now look at the visual observations that lead to this neuron being activated we can see that a lot of these observations contain doors and spheres.</p>
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_most_corr.html" align="center"></iframe>
+<div align="center">
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_most_corr.html" align="middle"></iframe>
+</div>
 
 <h2 id="embeddings-correlated-with-actions">Embeddings Correlated with Actions</h2>
 <p>Figure 7 shows the correlation between network activations and the four action branches. You can see a stronger correlation with the visual part of the embedding than the vector part.</p>
-<p><img src="./content/images/Act_Correlation.png" alt="Figure 7" title="Figure 4: Correlation Action - Activations"></p>
+<div align="center">
+<p><img src="./content/images/Act_Correlation.png" alt="Figure 7" title="Figure 7: Correlation Action - Activations"></p>
+</div>
+
 <h2 id="correlations-of-neurons-with-each-other">Correlations of Neurons With Each Other</h2>
 <p>In this display you can see the correlation of each neuron with all the other neurons. If you want to see the visual observations which led to the selected neuron being active click on the button &quot;Active Frames&quot; and they will appear in the display below.</p>
-<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html" align="center"></iframe>
+<div align="center">
+<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html" align="middle"></iframe>
+</div>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
   </style></defs><path d="M536.255427 195.182354c-7.804756-7.804756-17.966187-11.615549-28.311813-11.615549-9.43693 0-18.874883 3.449565-26.496467 10.163477-2.360767 1.452071-4.356214 3.267417-6.352685 5.262864L218.47792 455.611735c-15.607466 15.60542-15.607466 40.834011 0 56.43943 15.607466 15.607466 41.558511 15.607466 57.167001 0l193.46013-192.733583 0 600.526219c0 22.1423 17.787108 39.927361 39.927361 39.927361 22.140253 0 39.927361-17.785062 39.927361-39.927361L548.959773 319.317583 737.15704 508.422522c15.607466 15.607466 40.469714 15.607466 56.078203 0 15.607466-15.607466 15.425318-40.834011-0.182149-56.441477L536.255427 195.182354 536.255427 195.182354z" p-id="1036" fill="#333"/><path d="M101.784174 143.097092l816.674071 0c22.140253 0 39.925315-17.785062 39.925315-39.927361 0-22.140253-17.784038-39.925315-39.925315-39.925315L101.784174 63.244416c-22.140253 0-39.927361 17.785062-39.927361 39.925315C61.856813 125.31203 79.643921 143.097092 101.784174 143.097092L101.784174 143.097092z" p-id="1037" fill="#333"/></svg>
