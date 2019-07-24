@@ -2,56 +2,20 @@
 
 The following results have been obtained from an agent trained for the [Unity Obstacle Tower Challenge](https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge). The agent needs to navigate a maze of rooms to get to a door which leads him one floor up. On the wa he can collect blue spheres which supply more time. Starting at level 5, the agent needs to find and pick up a key in order to open certain doors. Starting from level 10, the agent needs to solve puzzles in which he is supposed to push a box onto a designated area for a door to open. The agent shown here can't achive this yet.
 
+## The Agents Brain and How it Learns
 I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.
 
 ![Figure 1](https://github.com/vkakerbeck/Learning-World-Representations/tree/master/content/images/NetworkStructure.png "Figure 1: Network Structure")
 
+We will now look at the agents brain in one particular run. Figure 2 shows the overall statistics of this run. You can see that the agent reached level 10 within less than 2000 steps.
 
-<iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html"></iframe>
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>
-<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html"></iframe>
+![Figure 2](https://github.com/vkakerbeck/Learning-World-Representations/tree/master/content/images/Performance_Actions.png "Figure 2: Perforance and Action Distribution")
+<iframe width="600" height="550" frameborder="0" scrolling="no" src="content/fig_performance.html" align="center"></iframe>
 
-### Markdown
+## Activity in the Agents Brain
+The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html" align="center"></iframe>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vkakerbeck/Learning-World-Representations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-<script>
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-</script>
+<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html" align="center"></iframe>
