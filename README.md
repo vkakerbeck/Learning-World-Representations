@@ -32,6 +32,12 @@ Principal component analysis reveals quite a lot of variance in the activations.
 
 ![Figure 4](./content/images/PCA.png "Figure 4: PCA")
 
+When looking at the K-Means clustered data projected onto the principal component one can see somehow distinct point clouds.
+
+<div align="center">
+<p><img src="./content/images/PCA3_Vis_Cluster.png" alt="Figure 5" title="Figure 5: PCA Colored by Cluster"></p>
+</div>
+
 ## ICA on the Activations
 In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the the corresponding observations on the right.
 
@@ -39,18 +45,18 @@ In the animation below you can see the results of an independent component analy
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html"></iframe>
 </div>
 
-In figure 5 you can see the correlation between the IC values and the value estimate. Overall the correlation isn't very strong.
+In figure 6 you can see the correlation between the IC values and the value estimate. Overall the correlation isn't very strong.
 
 <div align="center">
-<p><img src="./content/images/ICA_Correlation.png" alt="Figure 5" title="Figure 5: ICA Correlation"></p>
+<p><img src="./content/images/ICA_Correlation.png" alt="Figure 6" title="Figure 6: ICA Correlation"></p>
 </div>
 
 ## Correlation Between Activations and Value Estimate
 
-In figure 5 you can see the correlation between the neuron activations in the hidden layer and the value estimate.
+In figure 7 you can see the correlation between the neuron activations in the hidden layer and the value estimate.
 
 <div align="center">
-<p><img src="./content/images/Val_Correlation.png" alt="Figure 6" title="Figure 6: Correlation VE - Activations"></p>
+<p><img src="./content/images/Val_Correlation.png" alt="Figure 7" title="Figure 7: Correlation VE - Activations"></p>
 </div>
 
 When looking at the most correlated neuron in the visual part of the embedding one can se spikes in the neuron strongly correlated with going through level doors or obtaining other rewards.
@@ -67,10 +73,10 @@ When we now look at the visual observations that lead to this neuron being activ
 
 ## Embeddings Correlated with Actions
 
-Figure 7 shows the correlation between network activations and the four action branches. You can see a stronger correlation with the visual part of the embedding than the vector part.
+Figure 8 shows the correlation between network activations and the four action branches. You can see a stronger correlation with the visual part of the embedding than the vector part.
 
 <div align="center">
-<p><img src="./content/images/Act_Correlation.png" alt="Figure 7" title="Figure 7: Correlation Action - Activations"></p>
+<p><img src="./content/images/Act_Correlation.png" alt="Figure 8" title="Figure 8: Correlation Action - Activations"></p>
 </div>
 
 ## Correlations of Neurons With Each Other
