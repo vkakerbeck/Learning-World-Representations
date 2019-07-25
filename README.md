@@ -19,13 +19,13 @@ The following animation shows the embedded layer activations in the agents brain
 </div>
 
 ## K-Means Clustering on the Activations
-In Figure 3 you can see the distribution on images into 10 clusters calculated with k-means clustering. When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 1), other clusters contain frames where the agent walks into walls while others contain jumping or right/left turns.
+In Figure 3 you can see the distribution on images into 10 clusters calculated with k-means clustering. When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 &1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9).
 
 <div align="center">
 <p><img src="./content/images/KMeans_10_Distribution_Web.png" alt="Figure 3" title="Figure 3: K-Means Distribution"></p>
 </div>
 
-[Explore Cluster](./content/anim_k-means.html)
+<a href="content/anim_k-means.html" target="_blank"> Explore Cluster</a>
 
 ## PCA on the Activations
 Principal component analysis reveals quite a lot of variance in the activations. The first three components explain only 46.68% of the variance and even 20 principal components can explain only 85.57% of the variance.
