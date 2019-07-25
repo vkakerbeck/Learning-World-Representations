@@ -1,6 +1,6 @@
 # Obstacle Tower Challenge - Agent Analysis
 
-The following results have been obtained from an agent trained for the <a href="https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge" target="_blank"> Unity Obstacle Tower Challenge </a>. The agent needs to navigate a maze of rooms to get to a door which leads him one floor up. On the wa he can collect blue spheres which supply more time. Starting at level 5, the agent needs to find and pick up a key in order to open certain doors. Starting from level 10, the agent needs to solve puzzles in which he is supposed to push a box onto a designated area for a door to open. The agent shown here can't achive this yet.
+The following results have been obtained from an agent trained for the <a href="https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge" target="_blank"> Unity Obstacle Tower Challenge </a>. The agent needs to navigate a maze of rooms to get to a door which leads him one floor up. On the way he can collect blue spheres which supply more time. Starting at level 5, the agent needs to find and pick up a key in order to open certain doors. Starting from level 10, the agent needs to solve puzzles in which he is supposed to push a box onto a designated area for a door to open. The agent shown here can't achieve this yet.
 
 <a href="RL-Encodings-Notebook.html" target="_blank"> Here </a> you can find the Jupyter Notebook used to generate the following figures and animations.
 
@@ -12,7 +12,7 @@ I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the 
 
 We will now look at the agents brain in one particular run. Figure 2 shows the overall statistics of this run. You can see that the agent reached level 10 within less than 2000 steps.
 
-![Figure 2](./content/images/Performance_Actions.png "Figure 2: Perforance and Action Distribution")
+![Figure 2](./content/images/Performance_Actions.png "Figure 2: Performance and Action Distribution")
 
 ## Activity in the Agents Brain
 The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.
@@ -42,7 +42,7 @@ When looking at the K-Means clustered data projected onto the principal componen
 </div>
 
 ## ICA on the Activations
-In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the the corresponding observations on the right.
+In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the corresponding observations on the right.
 
 <div align="center">
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html"></iframe>
