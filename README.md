@@ -21,8 +21,8 @@ The following animation shows the embedded layer activations in the agents brain
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>
 </div>
 
-## K-Means Clustering on the Activations
-In Figure 3 you can see the distribution on images into 10 clusters calculated with k-means clustering. When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 &1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9).
+## K-Means Clustering on the Visual Activations
+In Figure 3 you can see the distribution of images into 10 clusters calculated with k-means clustering. The clustering is performed on the embedding of the visual observations (256 dimensions). When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 &1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9).
 
 <div align="center">
 <p><img src="./content/images/KMeans_10_Distribution_Web.png" alt="Figure 3" title="Figure 3: K-Means Distribution"></p>
@@ -30,7 +30,7 @@ In Figure 3 you can see the distribution on images into 10 clusters calculated w
 
 <a href="content/anim_k-means.html" target="_blank"> Explore Cluster</a>
 
-## PCA on the Activations
+## PCA on the Activations in the Visual Embedding
 Principal component analysis reveals quite a lot of variance in the activations. The first three components explain only 46.68% of the variance and even 20 principal components can explain only 85.57% of the variance.
 
 ![Figure 4](./content/images/PCA.png "Figure 4: PCA")
@@ -41,8 +41,8 @@ When looking at the K-Means clustered data projected onto the principal componen
 <p><img src="./content/images/PCA3_Vis_Cluster.png" alt="Figure 5" title="Figure 5: PCA Colored by Cluster"></p>
 </div>
 
-## ICA on the Activations
-In the animation below you can see the results of an independent component analysis on the network activations. The independent components are shown on the left, paired the corresponding observations on the right.
+## ICA on the Activations in the Visual Embedding
+In the animation below you can see the results of an independent component analysis on the network activations in the embedding of the visual input. The independent components are shown on the left, paired the corresponding observations on the right.
 
 <div align="center">
 <iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html"></iframe>
@@ -54,7 +54,7 @@ In figure 6 you can see the correlation between the IC values and the value esti
 <p><img src="./content/images/ICA_Correlation.png" alt="Figure 6" title="Figure 6: ICA Correlation"></p>
 </div>
 
-## Correlation Between Activations and Value Estimate
+## Correlation Between Embeddings and Value Estimate
 
 In figure 7 you can see the correlation between the neuron activations in the hidden layer and the value estimate.
 
