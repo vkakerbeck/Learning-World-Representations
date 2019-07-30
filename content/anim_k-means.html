@@ -1,3 +1,26 @@
+<style>
+.bigbutton {
+  background-color:   #5da6ef ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.smallbutton {
+  background-color:   #89bff6 ;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+
 <script language="javascript">
   /* Define the Animation class */
   function Animation(frames, img_id, slider_id, interval, loop_select_id){
@@ -190,23 +213,24 @@
 
 <div class="animation" align="center">
     <br>
-    <button onclick="switch_clustering('images/KMeans_6_Distribution.png','images/WithinVar6.png',6,animLARIYOHHKDUGIURZ)">6 Cluster</button>
-    <button onclick="switch_clustering('images/KMeans_10_Distribution.png','images/WithinVar10.png',10,animLARIYOHHKDUGIURZ)">10 Cluster</button>
+    <button class="bigbutton" onclick="switch_clustering('images/KMeans_6_Distribution.png','images/WithinVar6.png',6,animLARIYOHHKDUGIURZ)">Show 6 Cluster</button>
+    <button class="bigbutton" onclick="switch_clustering('images/KMeans_10_Distribution.png','images/WithinVar10.png',10,animLARIYOHHKDUGIURZ)">Show 10 Cluster</button>
     <br>
     <img id="FrameDist" class="image" src="images/KMeans_10_Distribution.png" alt="image">
     <img id="ClassVar" class="image2" src="images/WithinVar10.png" alt="image">
     <br>
-    <button onclick="animLARIYOHHKDUGIURZ.show_cluster(0)">Cluster 0</button>
-    <button onclick="animLARIYOHHKDUGIURZ.show_cluster(1)">Cluster 1</button>
-    <button onclick="animLARIYOHHKDUGIURZ.show_cluster(2)">Cluster 2</button>
-    <button onclick="animLARIYOHHKDUGIURZ.show_cluster(3)">Cluster 3</button>
-    <button onclick="animLARIYOHHKDUGIURZ.show_cluster(4)">Cluster 4</button>
+    <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(0)">Cluster 0</button>
+    <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(1)">Cluster 1</button>
+    <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(2)">Cluster 2</button>
+    <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(3)">Cluster 3</button>
+    <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(4)">Cluster 4</button>
     <br>
-    <button onclick="animLARIYOHHKDUGIURZ.show_cluster(5)">Cluster 5</button>
-    <button id="button6" onclick="animLARIYOHHKDUGIURZ.show_cluster(6)">Cluster 6</button>
-    <button id="button7" onclick="animLARIYOHHKDUGIURZ.show_cluster(7)">Cluster 7</button>
-    <button id="button8" onclick="animLARIYOHHKDUGIURZ.show_cluster(8)">Cluster 8</button>
-    <button id="button9" onclick="animLARIYOHHKDUGIURZ.show_cluster(9)">Cluster 9</button>
+    <br>
+    <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(5)">Cluster 5</button>
+    <button class="smallbutton" id="button6" onclick="animLARIYOHHKDUGIURZ.show_cluster(6)">Cluster 6</button>
+    <button class="smallbutton" id="button7" onclick="animLARIYOHHKDUGIURZ.show_cluster(7)">Cluster 7</button>
+    <button class="smallbutton" id="button8" onclick="animLARIYOHHKDUGIURZ.show_cluster(8)">Cluster 8</button>
+    <button class="smallbutton" id="button9" onclick="animLARIYOHHKDUGIURZ.show_cluster(9)">Cluster 9</button>
     <br>
     <img id="_anim_imgLARIYOHHKDUGIURZ">
     <br>
