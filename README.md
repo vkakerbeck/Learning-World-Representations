@@ -22,14 +22,11 @@ The following animation shows the embedded layer activations in the agents brain
 </div>
 
 ## K-Means Clustering on the Visual Activations
-In Figure 3 you can see the distribution of images into 10 clusters calculated with k-means clustering. The clustering is performed on the embedding of the visual observations (256 dimensions). When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 &1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9).
+In Figure 3 (left) you can see the distribution of images into 10 clusters calculated with k-means clustering. On the right you can see the within class variance for each cluster. The clustering is performed on the embedding of the visual observations (256 dimensions). When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 &1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9).
 
 <div align="center">
-<p><img src="./content/images/KMeans_10_Distribution.png" alt="Figure 3" title="Figure 3: K-Means Distribution"></p>
+<iframe width="900" height="750" frameborder="0" scrolling="no" src="content/anim_k-means.html"></iframe>
 </div>
-
-<a href="content/anim_k-means.html" target="_blank"> Explore Cluster</a>
-
 
 ## PCA on the Activations in the Visual Embedding
 Principal component analysis reveals quite a lot of variance in the activations. The first three components explain only 46.68% of the variance and even 20 principal components can explain only 85.57% of the variance.
