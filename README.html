@@ -32,13 +32,13 @@
 <h2 id="activity-in-the-agents-brain">Activity in the Agents Brain</h2>
 <p>The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.</p>
 <div align="center">
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_encodings.html"></iframe>
+<iframe width="100%" height="350" frameborder="0" scrolling="auto" src="content/anim_encodings.html"></iframe>
 </div>
 
 <h2 id="k-means-clustering-on-the-visual-activations">K-Means Clustering on the Visual Activations</h2>
 <p>In Figure 3 (left) you can see the distribution of images into 10 (or 6) clusters calculated with k-means clustering. On the right you can see the within class variance for each cluster. The clustering is performed on the embedding of the visual observations (256 dimensions). When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 &amp; 1), other clusters contain frames where the agent walks through rooms (cluster 3 &amp; 4) while others contain jumping (cluster 2) or right/left turns (cluster 9). Feel free to also explore the images in the 6 class clustering (number of cluster with least within class variance).</p>
 <div align="center">
-<iframe width="900" height="750" frameborder="0" scrolling="no" src="content/anim_k-means.html"></iframe>
+<iframe width="100%" height="750" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
 </div>
 
 <h2 id="pca-on-the-activations-in-the-visual-embedding">PCA on the Activations in the Visual Embedding</h2>
@@ -52,7 +52,7 @@
 <h2 id="ica-on-the-activations-in-the-visual-embedding">ICA on the Activations in the Visual Embedding</h2>
 <p>In the animation below you can see the results of an independent component analysis on the network activations in the embedding of the visual input. The independent components are shown on the left, paired the corresponding observations on the right.</p>
 <div align="center">
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_ICA.html"></iframe>
+<iframe width="100%" height="300" frameborder="0" scrolling="auto" src="content/anim_ICA.html"></iframe>
 </div>
 
 <p>In figure 6 you can see the correlation between the IC values and the value estimate. Overall the correlation isn&apos;t very strong.</p>
@@ -68,12 +68,12 @@
 
 <p>When looking at the most correlated neuron in the visual part of the embedding one can se spikes in the neuron strongly correlated with going through level doors or obtaining other rewards.</p>
 <div align="center">
-<iframe width="800" height="550" frameborder="0" scrolling="no" src="content/most_cor.html"></iframe>
+<iframe width="100%" height="550" frameborder="0" scrolling="auto" src="content/most_cor.html"></iframe>
 </div>
 
 <p>When we now look at the visual observations that lead to this neuron being activated we can see that a lot of these observations contain doors and spheres.</p>
 <div align="center">
-<iframe width="600" height="300" frameborder="0" scrolling="no" src="content/anim_most_corr.html"></iframe>
+<iframe width="100%" height="350" frameborder="0" scrolling="auto" src="content/anim_most_corr.html"></iframe>
 </div>
 
 <h2 id="embeddings-correlated-with-actions">Embeddings Correlated with Actions</h2>
@@ -85,7 +85,7 @@
 <h2 id="correlations-of-neurons-with-each-other">Correlations of Neurons With Each Other</h2>
 <p>In this display you can see the correlation of each neuron with all the other neurons. If you want to see the visual observations which led to the selected neuron being active click on the button &quot;Active Frames&quot; and they will appear in the display below.</p>
 <div align="center">
-<iframe width="600" height="700" frameborder="0" scrolling="no" src="content/anim_correlations.html"></iframe>
+<iframe width="100%" height="700" frameborder="0" scrolling="auto" src="content/anim_correlations.html"></iframe>
 </div>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
