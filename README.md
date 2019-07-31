@@ -25,7 +25,7 @@ The following animation shows the embedded layer activations in the agents brain
 In Figure 3 (left) you can see the distribution of images into 10 (or 6) clusters calculated with k-means clustering. On the right you can see the within class variance for each cluster. The clustering is performed on the embedding of the visual observations (256 dimensions). When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 & 1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9). Feel free to also explore the images in the 6 class clustering (number of cluster with least within class variance).
 
 <div align="center">
-<iframe width="100%" height="1050" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
+<iframe width="100%" height="1650" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
 </div>
 
 ## PCA on the Activations in the Visual Embedding

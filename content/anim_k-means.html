@@ -188,6 +188,10 @@
     FrameDist.src = FrameDSrc;
     var ClassVar = document.getElementById('ClassVar');
     ClassVar.src = ClassVSrc;
+    var CorrA0 = document.getElementById('CorrCoefA0');
+    var CorrA1 = document.getElementById('CorrCoefA1');
+    var CorrA2 = document.getElementById('CorrCoefA2');
+    var CorrA3 = document.getElementById('CorrCoefA3');
     if (num==6){
       var b6 = document.getElementById('button6');
       var b7 = document.getElementById('button7');
@@ -197,6 +201,10 @@
       b7.style.visibility = "hidden";
       b8.style.visibility = "hidden";
       b9.style.visibility = "hidden";
+      CorrA0.src = "images/cluster_frames_6/Corrcoef_A0.png"
+      CorrA1.src = "images/cluster_frames_6/Corrcoef_A1.png"
+      CorrA2.src = "images/cluster_frames_6/Corrcoef_A2.png"
+      CorrA3.src = "images/cluster_frames_6/Corrcoef_A3.png"
       anim.change_clustering(6)
     }
     else{
@@ -208,6 +216,10 @@
       b7.style.visibility = "visible";
       b8.style.visibility = "visible";
       b9.style.visibility = "visible";
+      CorrA0.src = "images/cluster_frames_10/Corrcoef_A0.png"
+      CorrA1.src = "images/cluster_frames_10/Corrcoef_A1.png"
+      CorrA2.src = "images/cluster_frames_10/Corrcoef_A2.png"
+      CorrA3.src = "images/cluster_frames_10/Corrcoef_A3.png"
       anim.change_clustering(10)
     }
 
@@ -255,6 +267,12 @@
   </form>
     <br>
     <img id="CorrCoef" width=400 class="image" src="images/cluster_frames_10/Corrcoef_C0.png" alt="image">
+    <br>
+    <br>
+    <img id="CorrCoefA0" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A0.png" alt="image">
+    <img id="CorrCoefA1" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A1.png" alt="image">
+    <img id="CorrCoefA2" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A2.png" alt="image">
+    <img id="CorrCoefA3" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A3.png" alt="image">
 </div>
 
 
