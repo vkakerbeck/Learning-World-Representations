@@ -33,7 +33,7 @@
     this.timer = null;
     this.frames = new Array(frames.length);
     this.lens = [254, 1678, 35, 1940, 736, 20, 147, 364, 118, 209]
-    this.folder = "images/cluster_frames_10/C"
+    this.folder = "images/cluster_frames_10/"
 
     for (var i=0; i<frames.length; i++)
     {
@@ -163,19 +163,22 @@
 
     for (var i = 0; i < this.lens[cluster]; i++) {
       this.frames[i] = new Image();
-      this.frames[i].src = this.folder+cluster.toString()+"/img"+i.toString()+".png"
+      this.frames[i].src = this.folder+"C"+cluster.toString()+"/img"+i.toString()+".png"
       this.current_frame = 0;
       document.getElementById(this.slider_id).max = this.frames.length - 1;
       document.getElementById(this.img_id).src = this.frames[this.current_frame].src;
     }
+    var Corrcoef = document.getElementById('CorrCoef');
+    Corrcoef.src = this.folder+"Corrcoef_C"+cluster.toString()+".png";
+
   Animation.prototype.change_clustering = function(num)
     {
       if(num==6){
-        this.folder = "images/cluster_frames_6/C"
+        this.folder = "images/cluster_frames_6/"
         this.lens = [716, 1609, 2083, 175, 306, 612]
       }
       else{
-        this.folder = "images/cluster_frames_10/C"
+        this.folder = "images/cluster_frames_10/"
         this.lens = [254, 1678, 35, 1940, 736, 20, 147, 364, 118, 209]
       }
       }
@@ -250,6 +253,8 @@
     <input type="radio" name="state" value="loop" checked> Loop </input>
     <input type="radio" name="state" value="reflect" > Reflect </input>
   </form>
+    <br>
+    <img id="CorrCoef" width=400 class="image" src="images/cluster_frames_10/Corrcoef_C0.png" alt="image">
 </div>
 
 
