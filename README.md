@@ -4,6 +4,9 @@ The following results have been obtained from an agent trained for the <a href="
 
 <a href="RL-Encodings-Notebook.html" target="_blank"> Here </a> you can find the Jupyter Notebook used to generate the following figures and animations.
 
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ppRLisL9WbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## The Agents Brain and How it Learns
 I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.
