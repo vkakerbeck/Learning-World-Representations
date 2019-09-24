@@ -34,8 +34,8 @@
     this.direction = 0;
     this.timer = null;
     this.frames = new Array(frames.length);
-    this.lens = [254, 1678, 35, 1940, 736, 20, 147, 364, 118, 209]
-    this.folder = "images/cluster_frames_10/"
+    this.lens = [1062, 1004, 252, 463, 1027, 192]
+    this.folder = "images/cluster_frames_6/"
 
     for (var i=0; i<frames.length; i++)
     {
@@ -170,84 +170,21 @@
       document.getElementById(this.slider_id).max = this.frames.length - 1;
       document.getElementById(this.img_id).src = this.frames[this.current_frame].src;
     }
-    var Corrcoef = document.getElementById('CorrCoef');
-    Corrcoef.src = this.folder+"Corrcoef_C"+cluster.toString()+".png";
-
-  Animation.prototype.change_clustering = function(num)
-    {
-      if(num==6){
-        this.folder = "images/cluster_frames_6/"
-        this.lens = [716, 1609, 2083, 175, 306, 612]
-      }
-      else{
-        this.folder = "images/cluster_frames_10/"
-        this.lens = [254, 1678, 35, 1940, 736, 20, 147, 364, 118, 209]
-      }
-      }
-  }
-  function switch_clustering(FrameDSrc, ClassVSrc, num, anim) {
-    var FrameDist = document.getElementById('FrameDist');
-    FrameDist.src = FrameDSrc;
-    var ClassVar = document.getElementById('ClassVar');
-    ClassVar.src = ClassVSrc;
-    var CorrA0 = document.getElementById('CorrCoefA0');
-    var CorrA1 = document.getElementById('CorrCoefA1');
-    var CorrA2 = document.getElementById('CorrCoefA2');
-    var CorrA3 = document.getElementById('CorrCoefA3');
-    if (num==6){
-      var b6 = document.getElementById('button6');
-      var b7 = document.getElementById('button7');
-      var b8 = document.getElementById('button8');
-      var b9 = document.getElementById('button9');
-      b6.style.visibility = "hidden";
-      b7.style.visibility = "hidden";
-      b8.style.visibility = "hidden";
-      b9.style.visibility = "hidden";
-      CorrA0.src = "images/cluster_frames_6/Corrcoef_A0.png"
-      CorrA1.src = "images/cluster_frames_6/Corrcoef_A1.png"
-      CorrA2.src = "images/cluster_frames_6/Corrcoef_A2.png"
-      CorrA3.src = "images/cluster_frames_6/Corrcoef_A3.png"
-      anim.change_clustering(6)
-    }
-    else{
-      var b6 = document.getElementById('button6');
-      var b7 = document.getElementById('button7');
-      var b8 = document.getElementById('button8');
-      var b9 = document.getElementById('button9');
-      b6.style.visibility = "visible";
-      b7.style.visibility = "visible";
-      b8.style.visibility = "visible";
-      b9.style.visibility = "visible";
-      CorrA0.src = "images/cluster_frames_10/Corrcoef_A0.png"
-      CorrA1.src = "images/cluster_frames_10/Corrcoef_A1.png"
-      CorrA2.src = "images/cluster_frames_10/Corrcoef_A2.png"
-      CorrA3.src = "images/cluster_frames_10/Corrcoef_A3.png"
-      anim.change_clustering(10)
-    }
-
 }
 </script>
 
 <div class="animation" align="center">
     <br>
-    <button class="bigbutton" onclick="switch_clustering('images/KMeans_6_Distribution.png','images/WithinVar6.png',6,animLARIYOHHKDUGIURZ)">Show 6 Cluster</button>
-    <button class="bigbutton" onclick="switch_clustering('images/KMeans_10_Distribution.png','images/WithinVar10.png',10,animLARIYOHHKDUGIURZ)">Show 10 Cluster</button>
-    <br>
-    <img id="FrameDist" class="image" src="images/KMeans_10_Distribution.png" alt="image">
-    <img id="ClassVar" class="image2" src="images/WithinVar10.png" alt="image">
+    <img id="FrameDist" width=300 class="image" src="images/KMeans_6_Distribution.png" alt="image">
+    <img id="ClassVar" width=300 class="image2" src="images/WithinVar6.png" alt="image">
     <br>
     <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(0)">Cluster 0</button>
     <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(1)">Cluster 1</button>
     <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(2)">Cluster 2</button>
     <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(3)">Cluster 3</button>
     <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(4)">Cluster 4</button>
-    <br>
-    <br>
     <button class="smallbutton" onclick="animLARIYOHHKDUGIURZ.show_cluster(5)">Cluster 5</button>
-    <button class="smallbutton" id="button6" onclick="animLARIYOHHKDUGIURZ.show_cluster(6)">Cluster 6</button>
-    <button class="smallbutton" id="button7" onclick="animLARIYOHHKDUGIURZ.show_cluster(7)">Cluster 7</button>
-    <button class="smallbutton" id="button8" onclick="animLARIYOHHKDUGIURZ.show_cluster(8)">Cluster 8</button>
-    <button class="smallbutton" id="button9" onclick="animLARIYOHHKDUGIURZ.show_cluster(9)">Cluster 9</button>
+
     <br>
     <img id="_anim_imgLARIYOHHKDUGIURZ">
     <br>
@@ -268,13 +205,8 @@
     <input type="radio" name="state" value="reflect" > Reflect </input>
   </form>
     <br>
-    <img id="CorrCoef" width=400 class="image" src="images/cluster_frames_10/Corrcoef_C0.png" alt="image">
+    <img id="CorrCoef" width=700 class="image" src="images/Corrcoef_Comparison.png" alt="image">
     <br>
-    <br>
-    <img id="CorrCoefA0" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A0.png" alt="image">
-    <img id="CorrCoefA1" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A1.png" alt="image">
-    <img id="CorrCoefA2" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A2.png" alt="image">
-    <img id="CorrCoefA3" width="45%" class="image" src="images/cluster_frames_10/Corrcoef_A3.png" alt="image">
 </div>
 
 
@@ -288,7 +220,7 @@
     var frames = new Array(0);
 
     for (var i = 0; i < 254; i++) {
-      frames[i] = "images/cluster_frames_10/C0/img"+i.toString()+".png"
+      frames[i] = "images/cluster_frames_6/C0/img"+i.toString()+".png"
     }
     setTimeout(function() {
         animLARIYOHHKDUGIURZ = new Animation(frames, img_id, slider_id, 200, loop_select_id);

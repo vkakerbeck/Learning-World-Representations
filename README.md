@@ -5,7 +5,7 @@ The following results have been obtained from an agent trained for the <a href="
 <a href="RL-Encodings-Notebook.html" target="_blank"> Here </a> you can find the Jupyter Notebook used to generate the following figures and animations.
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ppRLisL9WbM?end=38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ppRLisL9WbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## The Agents Brain and How it Learns
@@ -30,7 +30,7 @@ The following animation shows the embedded layer activations in the agents brain
 In Figure 3 (left) you can see the distribution of images into 10 (or 6) clusters calculated with k-means clustering. On the right you can see the within class variance for each cluster. The clustering is performed on the embedding of the visual observations (256 dimensions). When looking at the images in the different clusters one can make out some semantic patterns. Some cluster contain images where the agent walks through doors or sees other rewarding events coming such as blue spheres or keys (for instance see cluster 0 & 1), other clusters contain frames where the agent walks through rooms (cluster 3 & 4) while others contain jumping (cluster 2) or right/left turns (cluster 9). Feel free to also explore the images in the 6 class clustering (number of cluster with least within class variance).
 
 <div align="center">
-<iframe width="100%" height="1650" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
+<iframe width="100%" height="1000" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
 </div>
 
 In the figure below one can see that the clusters don't only have a meaningful structure in regard to the actions they contain but also the content of the image. One can see that for example the information if a level door is observed is represented in the visual encoding and in this clustering those frames are mainly placed within cluster 5.
