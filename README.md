@@ -11,11 +11,13 @@ The following results have been obtained from an agent trained for the <a href="
 ## The Agents Brain and How it Learns
 I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.
 
-![Figure 1](./content/images/NetworkStructure.png "Figure 1: Network Structure")
+![Figure 1](./content/images/NetworkStructureObs.png "Figure 1: Network Structure")
 
 We will now look at the agents brain in one particular run. Figure 2 shows the overall statistics of this run. You can see that the agent reached level 10 within less than 2000 steps.
 
-![Figure 2](./content/images/Performance_Actions.png "Figure 2: Performance and Action Distribution")
+<div align="center">
+<img width="50%" src="./content/images/InferenceStatistics.png">
+</div>
 
 ## Activity in the Agents Brain
 The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.
@@ -31,6 +33,22 @@ In Figure 3 (left) you can see the distribution of images into 10 (or 6) cluster
 <iframe width="100%" height="1650" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
 </div>
 
+In the figure below one can see that the clusters don't only have a meaningful structure in regard to the actions they contain but also the content of the image. One can see that for example the information if a level door is observed is represented in the visual encoding and in this clustering those frames are mainly placed within cluster 5.
+<div align="center">
+<img width="50%" src="./content/images/Corrcoef_Doors_Trained.png">
+</div>
+
+## T-SNE on the Visual Embeddings
+Hover with your curser over the data points to see the corresponding observations of the agent for each point.
+
+<div align="center">
+<iframe width="100%" height="750" frameborder="0" scrolling="auto" src="content/tsne.html"></iframe>
+</div>
+
+<div align="center">
+<img width="30%" src="./content/images/tsne_actions_LevelDoors_Legend.png">
+</div>
+
 ## PCA on the Activations in the Visual Embedding
 Principal component analysis reveals quite a lot of variance in the activations. The first three components explain only 46.68% of the variance and even 20 principal components can explain only 85.57% of the variance.
 
@@ -40,19 +58,6 @@ When looking at the K-Means clustered data projected onto the principal componen
 
 <div align="center">
 <p><img src="./content/images/PCA3_Vis_Cluster.png" alt="Figure 5" title="Figure 5: PCA Colored by Cluster"></p>
-</div>
-
-## ICA on the Activations in the Visual Embedding
-In the animation below you can see the results of an independent component analysis on the network activations in the embedding of the visual input. The independent components are shown on the left, paired the corresponding observations on the right.
-
-<div align="center">
-<iframe width="100%" height="300" frameborder="0" scrolling="auto" src="content/anim_ICA.html"></iframe>
-</div>
-
-In figure 6 you can see the correlation between the IC values and the value estimate. Overall the correlation isn't very strong.
-
-<div align="center">
-<p><img src="./content/images/ICA_Correlation.png" alt="Figure 6" title="Figure 6: ICA Correlation"></p>
 </div>
 
 ## Correlation Between Embeddings and Value Estimate

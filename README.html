@@ -30,9 +30,12 @@
 
 <h2 id="the-agents-brain-and-how-it-learns">The Agents Brain and How it Learns</h2>
 <p>I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.</p>
-<p><img src="./content/images/NetworkStructure.png" alt="Figure 1" title="Figure 1: Network Structure"></p>
+<p><img src="./content/images/NetworkStructureObs.png" alt="Figure 1" title="Figure 1: Network Structure"></p>
 <p>We will now look at the agents brain in one particular run. Figure 2 shows the overall statistics of this run. You can see that the agent reached level 10 within less than 2000 steps.</p>
-<p><img src="./content/images/Performance_Actions.png" alt="Figure 2" title="Figure 2: Performance and Action Distribution"></p>
+<div align="center">
+<img width="50%" src="./content/images/InferenceStatistics.png">
+</div>
+
 <h2 id="activity-in-the-agents-brain">Activity in the Agents Brain</h2>
 <p>The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects. R and V display the obtained reward from the environment and the value estimate respectively.</p>
 <div align="center">
@@ -45,23 +48,27 @@
 <iframe width="100%" height="1650" frameborder="0" scrolling="auto" src="content/anim_k-means.html"></iframe>
 </div>
 
+<p>In the figure below one can see that the clusters don&apos;t only have a meaningful structure in regard to the actions they contain but also the content of the image. One can see that for example the information if a level door is observed is represented in the visual encoding and in this clustering those frames are mainly placed within cluster 5.</p>
+<div align="center">
+<img width="50%" src="./content/images/Corrcoef_Doors_Trained.png">
+</div>
+
+<h2 id="t-sne-on-the-visual-embeddings">T-SNE on the Visual Embeddings</h2>
+<p>Hover with your curser over the data points to see the corresponding observations of the agent for each point.</p>
+<div align="center">
+<iframe width="100%" height="750" frameborder="0" scrolling="auto" src="content/tsne.html"></iframe>
+</div>
+
+<div align="center">
+<img width="30%" src="./content/images/tsne_actions_LevelDoors_Legend.png">
+</div>
+
 <h2 id="pca-on-the-activations-in-the-visual-embedding">PCA on the Activations in the Visual Embedding</h2>
 <p>Principal component analysis reveals quite a lot of variance in the activations. The first three components explain only 46.68% of the variance and even 20 principal components can explain only 85.57% of the variance.</p>
 <p><img src="./content/images/PCA.png" alt="Figure 4" title="Figure 4: PCA"></p>
 <p>When looking at the K-Means clustered data projected onto the principal component one can see somehow distinct point clouds.</p>
 <div align="center">
 <p><img src="./content/images/PCA3_Vis_Cluster.png" alt="Figure 5" title="Figure 5: PCA Colored by Cluster"></p>
-</div>
-
-<h2 id="ica-on-the-activations-in-the-visual-embedding">ICA on the Activations in the Visual Embedding</h2>
-<p>In the animation below you can see the results of an independent component analysis on the network activations in the embedding of the visual input. The independent components are shown on the left, paired the corresponding observations on the right.</p>
-<div align="center">
-<iframe width="100%" height="300" frameborder="0" scrolling="auto" src="content/anim_ICA.html"></iframe>
-</div>
-
-<p>In figure 6 you can see the correlation between the IC values and the value estimate. Overall the correlation isn&apos;t very strong.</p>
-<div align="center">
-<p><img src="./content/images/ICA_Correlation.png" alt="Figure 6" title="Figure 6: ICA Correlation"></p>
 </div>
 
 <h2 id="correlation-between-embeddings-and-value-estimate">Correlation Between Embeddings and Value Estimate</h2>
