@@ -1,4 +1,4 @@
-# Obstacle Tower Challenge - Agent Analysis
+# Learning Semantically Meaningful Representations Through Embodiment
 
 The following results have been obtained from an agent trained for the <a href="https://www.aicrowd.com/challenges/unity-obstacle-tower-challenge" target="_blank"> Unity Obstacle Tower Challenge </a>. The agent needs to navigate a maze of rooms to get to a door which leads him one floor up. On the way he can collect blue spheres which supply more time. Starting at level 5, the agent needs to find and pick up a key in order to open certain doors. Starting from level 10, the agent needs to solve puzzles in which he is supposed to push a box onto a designated area for a door to open. The agent shown here can't achieve this yet.
 
