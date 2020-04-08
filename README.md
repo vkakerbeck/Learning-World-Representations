@@ -54,13 +54,9 @@ Hover with your curser over the data points to see the corresponding observation
 ## PCA on the Activations in the Visual Embedding
 Principal component analysis reveals quite a lot of variance in the activations. The first three components explain only 46.68% of the variance and even 20 principal components can explain only 85.57% of the variance.
 
-![Figure 4](./content/images/PCA.png "Figure 4: PCA")
+![Figure 4](./content/images/PCA_colored.png "Figure 4: PCA")
 
 When looking at the K-Means clustered data projected onto the principal component one can see somehow distinct point clouds.
-
-<div align="center">
-<p><img src="./content/images/PCA3_Vis_Cluster.png" alt="Figure 5" title="Figure 5: PCA Colored by Cluster"></p>
-</div>
 
 ## Correlation Between Embeddings and Value Estimate
 
