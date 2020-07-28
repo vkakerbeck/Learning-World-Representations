@@ -92,3 +92,10 @@ In this display you can see the correlation of each neuron with all the other ne
 <div align="center">
 <iframe width="100%" height="700" frameborder="0" scrolling="auto" src="content/anim_correlations.html"></iframe>
 </div>
+
+## Generalization
+The following animation shows the embedded layer activations in the agents brain (left) with the corresponding visual observations (right) and the actions which the agent selects on a generalization run. In this run the environment is lit in new, untrained lighting conditions. Here Level 0,1,2,3 & 5 are shown.
+
+<div align="center">
+<iframe width="100%" height="350" frameborder="0" scrolling="auto" src="content/anim_encodingsG.html"></iframe>
+</div>
