@@ -4,8 +4,6 @@ The following results have been obtained from an agent trained for the <a href="
 
 <a href="RL-Encodings-Notebook.html" target="_blank"> Here </a> you can find the Jupyter Notebook used to generate the following figures and animations.
 
-<a href="NeuralNetworksAnalysis.ipynb" target="_blank"> This </a> notebook contains code to compare the representations learned by the embodied agent to representations of an autoencoder and a classifier trained on the obstacle tower observations.
-
 Further data analysis can be found <a href="./DataAnalysis" target="_blank"> here </a>. The corresponding data is stored and accessible:
 
  Clay, Viviane (2020), “Data from Neural Network Training in the Obstacle Tower Environment to Investigate Embodied, Weakly Supervised Learning”, Mendeley Data, v1 http://dx.doi.org/10.17632/zdh4d5ws2z.1
