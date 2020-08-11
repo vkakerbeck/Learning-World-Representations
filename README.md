@@ -6,6 +6,10 @@ The following results have been obtained from an agent trained for the <a href="
 
 <a href="NeuralNetworksAnalysis.ipynb" target="_blank"> This </a> notebook contains code to compare the representations learned by the embodied agent to representations of an autoencoder and a classifier trained on the obstacle tower observations.
 
+Further data analysis can be found <a href="./DataAnalysis" target="_blank"> here </a>. The corresponding data is stored and accessible:
+
+ Clay, Viviane (2020), “Data from Neural Network Training in the Obstacle Tower Environment to Investigate Embodied, Weakly Supervised Learning”, Mendeley Data, v1 http://dx.doi.org/10.17632/zdh4d5ws2z.1
+
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ppRLisL9WbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
