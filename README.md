@@ -4,7 +4,7 @@ The following results have been obtained from an agent trained for the <a href="
 
 <a href="RL-Encodings-Notebook.html" target="_blank"> Here </a> you can find the Jupyter Notebook used to generate the following figures and animations.
 
-Further data analysis can be found <a href="./DataAnalysis" target="_blank"> here </a>. The corresponding data is stored and accessible:
+Further data analysis can be found <a href="https://github.com/vkakerbeck/Learning-World-Representations/tree/master/DataAnalysis" target="_blank"> here </a>. The corresponding data is stored and accessible:
 
  Clay, Viviane (2020), “Data from Neural Network Training in the Obstacle Tower Environment to Investigate Embodied, Weakly Supervised Learning”, Mendeley Data, v1 http://dx.doi.org/10.17632/zdh4d5ws2z.1
 
