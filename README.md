@@ -6,7 +6,10 @@ The following results have been obtained from an agent trained for the <a href="
 
 Further data analysis can be found <a href="https://github.com/vkakerbeck/Learning-World-Representations/tree/master/DataAnalysis" target="_blank"> here </a>. The corresponding data is stored and accessible:
 
- Clay, Viviane (2020), “Data from Neural Network Training in the Obstacle Tower Environment to Investigate Embodied, Weakly Supervised Learning”, Mendeley Data, v1 http://dx.doi.org/10.17632/zdh4d5ws2z.1
+ Clay, Viviane (2020), “Data from Neural Network Training in the Obstacle Tower Environment to Investigate Embodied, Weakly Supervised Learning”, Mendeley Data, V2, doi: 10.17632/zdh4d5ws2z.2
+
+ Cite the paper:
+ Clay, V., König, P., Kühnberger, K.-U. & Pipa, G. Learning sparse and meaningful representations through embodiment. Neural Networks (2020). https://doi.org/10.1016/j.neunet.2020.11.004.
 
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ppRLisL9WbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
