@@ -15,6 +15,15 @@ Further data analysis can be found <a href="https://github.com/vkakerbeck/Learni
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ppRLisL9WbM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+
+Further research on using the learned representation for few-shot learning can be found in this repository: https://github.com/vkakerbeck/FastConceptMapping
+
+Also check out this follow-up paper: https://ieeexplore.ieee.org/document/10274870
+
+V. Clay, G. Pipa, K. -U. Kühnberger and P. König, "Development of Few-Shot Learning Capabilities in Artificial Neural Networks When Learning Through Self-Supervised Interaction," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 46, no. 1, pp. 209-219, Jan. 2024, doi: 10.1109/TPAMI.2023.3323040.
+
+
+
 ## The Agents Brain and How it Learns
 I use proximal policy optimization (PPO) to train the agent. Figure 1 shows the underlying network structure (blue). The agent makes decisions based on visual and vector observations provided by the environment (yellow). Vector observations are composed of the time left, the number of key which the agent possesses and the level in which he finds himself.
 
